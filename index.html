@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive Portfolio Website ">
+    <meta name="author" content="">
+    <title>Responsive Portfolio Website | Home</title>
+    
+    </head>
+    <style>
+    
+    
+    
+ body {
+font: 13pt Georgia, "Times New Roman", Times, serif;
+line-height: 1.3;
+background: #fff !important;
+color: #000;
+     }
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+/* ----------Header---------- */
+header{
+  background-color: grey;
+  color: #32a0c2;
+  padding-top: 30px;
+  min-height: 70px;
+
+}
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+    page-break-inside:avoid;
+}
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header #branding{
+  float: left;
+}
+header #branding h1{
+  margin: 0;
+}
+/*header nav{
+  float: right;
+  margin-top: 10px;
+
+}*/
+
+
+header .highlight, header .current a{
+  color: #32a0c2;
+  font-weight: bold;
+}
+header a:hover{
+  color: #32a0c2;
+  font-weight: bold;
+}
+
+/* ----------Showcase----------*/
+/*#showcase {
+  min-height: 400px;
+  background:url('../images/sGowK.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff;
+}*/
+#showcase h1{
+  { page-break-after:avoid;
+  page-break-inside:avoid }
+
+  margin-top: 100px;
+  font-size:30px;
+  margin-bottom: 10px;
+background-color: #333;
+}
+#showcase p{
+  font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding: 15px;
+  color: #ffffff;
+  background-color: grey;
+}
+#newsletter h1{
+  float: none;
+}
+#newsletter form{
+  float: right;
+  margin-top: 15px;
+}
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+.button_1{
+  height: 38px;
+  background: #cccccc;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #353637;
+}
+
+/*----------cards--------*/
+/*Top card*/
+
+.top-card{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    padding:1.5rem;
+}
+@page { margin: 2cm;
+ }
+@media print {
+
+/* Inhaltsbreite setzen, Floats und Margins aufheben */
+/* Achtung: Die Klassen und IDs variieren von Theme zu Theme. Hier also eigene Klassen setzen */
+#content, #page {
+width: 100%;
+margin: 0;
+float: none;
+}
+.card {
+width: 100%;
+display: none;
+
+}
+.card{
+
+    text-align: center;
+    padding: 1.5rem;
+
+}
+
+/*----------portfolio--------------*/
+.portfolio{
+display: none;
+grid-gap: 30px;
+grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+}
+.portfolio img{
+    width: 100%;
+}
+/*------------Gallery---------------*/
+.gallery{
+    text-align: center;
+    color:  #32a0c2;
+    font-style: italic;
+}
+.galp{
+    text-align: center;
+    font-size:1.5em;
+}
+
+.button_1{
+    background-color:gray;
+    color:#fff;
+}
+
+/*footer*/
+.social{
+margin-top: 2rem;
+background: gray;
+color: #fff;
+text-align: center;
+padding:1rem;
+
+}
+.social,p{
+text-align: center;
+}
+
+
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+   .card {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+    .portfolio img{
+    width: 100%;
+}
+  header{
+    padding-bottom: 20px;
+  }
+  #showcase h1{
+    font-size: 24pt;
+    color:#fff;
+  }
+  h2, h3, {
+  font-size: 14pt;
+  margin-top: 25px;
+  }
+  #newsletter button {
+    display: block;
+    width: 100%;
+  }
+  #newsletter form input[type="email"] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 500px) {
+
+} /* insert CSS code for small screen sizes here */ }
+
+/*-------- Sidebar-------- */
+aside#sidebar{
+  float: right;
+  width: 30%;
+  padding: 5px;
+}
+aside#sidebar .contact input, aside#sidebar .contact textarea{
+  width: 90%;
+  padding: 5px;
+}
+article#main-col{
+  float: left;
+  width: 65%;
+}
+
+@media screen and (min-width: 500px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  .card,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+/* ---------Services---------- */
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #32a0c2;
+}
+ul#services h3{
+  border-bottom: #353637 solid 1px;
+}
+/*------Contact---------*/
+    #newsletter form input[type="email"],
+  .contact input,
+  .contact textarea,
+  .contact label{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+  <body>
+    <header>
+    <div class="container">
+        <div id="branding">
+          <h1>My Portfolio</h1>
+        </div>
+        <!---<nav>
+          <ul>
+            <li><a href="#index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portflio.html">Portfolio</a></li>
+              <li><a href="Gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+
+          </ul>
+        </nav>-->
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+        <h1>Welcome To My Portfolio</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repellat incidunt quasi quibusdam non nostrum, dolorem molestiae enim, excepturi soluta libero voluptatem provident consectetur accusamus nulla repudiandae nobis. Excepturi, assumenda.</p>
+      </div>
+    </section>
+    <section id="newsletter">
+    <div class="container">
+        <h1></h1>
+        <form action="">
+          <input type="email" placeholder="Enter your email address ... ">
+          <button type="submit" class="button_1"></button>
+        </form>
+      </div>
+    </section>
+
+ <section class="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">About Me</h1>
+
+<p> My journey to becoming a web developer from scratch First, let me introduce myself. My name is Nigist D, and I’m a partime Web developer student with 2 years Associate degree Program. In the past semester, I’ve learned a basic Html5/css3, and Javascrpit,and some other class This may not sound like a lot of experience, but finishing my first, and second semester as a developer has been a huge milestone for me. This is because I had no real experience doing web development — and not much programming experience in general beyond some basic Html5/css3 and Java scrpit.</p>
+
+<p>Traveling is my absolute favorite thing.There are two things I must do when i travel, and one of them is shopping in a grocery store. I love to see how everything differs from my culture second meet with people that have different background, and different culture.</p>
+
+<p>Almost every one of us agree that life’s real education happens outside the classroom. Classrooms with teachers, friends and textbooks are of course one way to learn but they are not the only In fact, traveling is the best way to learn things and the things that matter in our lives.</p>
+<p class="dark">
+</article>
+ <aside id="sidebar">
+<div class="dark">
+<h3><i class="fa fa-users"></i>My Learning Exeperiance</h3>
+
+<p>I remembermy first class learnning HTML and CSS website that I built first home page template for myself. It was a real struggle first, but once i did my first three project i feel great about myself then relaize that In any case, you’re gonna need HTML5, CSS3, JS and a server-side language. So if you want to learn web development it makes sense to learn all of them.</p>
+
+<p>In my little experiance I learn that you first learn HTML5 and CSS3 so that you know the basics of building web pages. You can learn them at the same time since they tightly work together. You can them move on to JavaScript to learn how to animate your pages. Finally, learn PHP to build a dynamic site.</p>
+
+</div>
+</aside>
+</div>
+</section>
+<footer class="social">
+<a href="http://www.facebook.com"><img src='images/face-book.png' width ="50" height="50" alt="facebook" /></a>
+<a href="http://www.twitter.com"><img src='images/twitter-.png' width="50" height="50" alt="twitter" /></a>
+<a href="http://www.youtube.com"><img src='images/youtube1.png' width="50" height="50" alt="youtube" /></a>
+<p>919-666-3333</p>
+<p>Contact information: <a href="mailto:https://waketech.edu">waketech.edu</a></p>
+<p>&copy; 2019 Myportfolio.com</p>.
+</footer>
+</body>
+</html>
